@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>form</title>
+
+</head>
+<body>
+    <form action="/assignment.php" method="post">
+        <label for="fname">firstName:</label><br>
+        <input type="text" id="fname" placeholder=" Please enter your first name"><br>
+        <label for="mname">middleName:</label><br>
+        <input type="text" id="mname" placeholder="Please enter your middle name"><br>
+        <label for="lname">lastName:</label><br>
+        <input type="text" id="lname" placeholder="Please enter your last name"><br>
+        
+        <p>Please Select Your Course:</p>
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="html"><br>
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="css"><br>
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="javascript"><br>
+        <br>
+        <!--Gender-->
+        <label>Gender:</label>
+        <select name="Gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <br>
+        <!--Phone,,Email,Password-->
+        <label for = "phonenumber">PhoneNumber:</label><br>
+        <input type="tel" pattern="[0-9]{2}-[0-9]{10}"><br>
+        <label for="Email">Email:</label><br>
+        <input type="email" id="Email"><br>
+        <label for="Pass">Password:</label><br>
+        <input type="password" id="Pass" pattern="(?=.*\d)(?=.*[a-z]).(?=.*[A-Z])(?=.*[@#$%&*!]).{8,}"
+         title="Must be 5 characters, 1 symbol, and 2 digits "><br>
+        <br><input type="submit" value="Submit">
+        
+        </form>
